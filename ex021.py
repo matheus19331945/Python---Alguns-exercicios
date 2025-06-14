@@ -1,6 +1,6 @@
 #Importando bibliotecas necessárias
 import pygame
-
+# teste comentario
 # Inicializa o mixer de áudio do pygame
 pygame.mixer.init()
 
