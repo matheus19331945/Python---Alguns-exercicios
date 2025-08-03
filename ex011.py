@@ -12,3 +12,7 @@ quantidade_tinta = area / 2
 # Exibe os resultados
 print(f"A área da parede é de {area:.2f} metros quadrados.")
 print(f"Você precisará de {quantidade_tinta:.2f} litros de tinta para pintar a parede.")
+
+# Exibe os resultados com cores
+print(f"\033[34mA área da parede é de {area:.2f} metros quadrados.\033[m")
+print(f"\033[34mVocê precisará de {quantidade_tinta:.2f} litros de tinta para pintar a parede.\033[m")

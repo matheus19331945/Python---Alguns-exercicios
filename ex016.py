@@ -7,4 +7,4 @@ numero_inteiro = math.trunc(numero_real)
 #Se eu utilizar o "math.trunc" ele irá transformar o numero para o numero inteiro mais próximo do 0
 
 #Exibir dados na tela
-print(f"A porção inteira de {numero_real} é {numero_inteiro}")
+print(f"\033[7mA porção inteira de {numero_real} é {numero_inteiro} \033[m")

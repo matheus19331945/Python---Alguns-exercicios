@@ -5,3 +5,8 @@ numero = int(input("Digite um número inteiro para ver sua tabuada: "))
 print(f"Tabuada de {numero}:")
 for i in range(1, 11):
     print(f"{numero} x {i} = {numero * i}")
+
+# Exibe a tabuada do número inserido com cores
+print(f"Tabuada de {numero}:")
+for i in range(1, 11):
+    print(f"\033[35m{numero} x {i} = {numero * i}\033[m")

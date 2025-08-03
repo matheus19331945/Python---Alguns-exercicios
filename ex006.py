@@ -6,3 +6,7 @@ print(f"O dobro de {valor_usuario} é igual a: {valor_usuario * 2} \n"
       f"O triplo de {valor_usuario} é igual a: {valor_usuario * 3} \n"
       f"A raiz quadrada de {valor_usuario} é igual a {valor_usuario ** 0.5:.2f} ")
 
+#Com cores - Realizando os cálculos aritméticos
+print(f"O dobro de {valor_usuario} é igual a: \033[32m{valor_usuario * 2}\033[m \n"
+      f"O triplo de {valor_usuario} é igual a: \033[33m{valor_usuario * 3}\033[m \n"
+      f"A raiz quadrada de {valor_usuario} é igual a \033[31m{valor_usuario ** 0.5:.2f}\033m ")
