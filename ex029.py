@@ -14,4 +14,5 @@ if velocidade_carro > limite_velocidade:
      em {velocidade_carro - limite_velocidade:.2f} km/h. Valor da multa: R$ {multa:.2f}''')
 else:
     print('Velocidade dentro do limite.')
+    print('\033[32mVelocidade dentro do limite.\033[m') # Com cores
 

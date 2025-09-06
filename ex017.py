@@ -9,4 +9,6 @@ cateto_adjacente = float(input("Informe o valor do comprimento do cateto adjacen
 hipotenusa = math.hypot(cateto_oposto, cateto_adjacente)
 
 #Exibindo valor na tela
-print(f"O comprimento da hipotenusa é:  {hipotenusa:.2f}")
+print(f"\033[0:31:40m O comprimento da hipotenusa é:  {hipotenusa:.2f}\033[m")
+
+#Parei aqui para aplicar as cores

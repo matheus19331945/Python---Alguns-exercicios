@@ -22,4 +22,4 @@ def calcular_preco(viagem_user, preco_curto, preco_longo):
 
 # Calcular e exibir o preço da passagem
 preco_passagem = calcular_preco(viagem_user, preco_viagem_curta, preco_viagem_longa)
-print(f'O preço da sua viagem será de R${preco_passagem:.2f}')
+print(f'\033[32mO preço da sua viagem será de R${preco_passagem:.2f}\033[m')

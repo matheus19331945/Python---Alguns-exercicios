@@ -8,6 +8,6 @@ while True:
 
 # Calculo do bissexto e exibição do resultado
 if (ano_user % 4 == 0 and ano_user % 100 != 0) or (ano_user % 400 == 0):
-    print('O ano é bissexto')
+    print('\033[4;32mO ano é bissexto\033[m')
 else:
-    print('O ano não é bissexto')
+    print('\033[4;31mO ano não é bissexto\033[m')

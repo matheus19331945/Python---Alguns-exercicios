@@ -1,25 +1,17 @@
-#Valor da casa, saláro do comprador , anos para pagar
-#Clcular o valor da prestação mensal, nao pode exceder 30% do salario ou o emprestimo será negado
-#Entrada =
-#Saida
+print('========== EMPRÉSTIMO BANCÁRIO ===============')
 
-# Introduction
-print('==========BANK=LOAN===============')
-house_value = float(input('Enter the house value: '))
-    # Calculate 30% of the salary
-buyer_wage = float(input('Enter the wage of the buyer: '))
-monthly_payment = buyer_wage * 30 / 100
-    # Calculate the numbers of months
-years_to_pay = int(input('Enter the number of years to pay: '))
-months_to_pay = years_to_pay * 12
+# Entradas do usuário
+valor_casa = float(input('Digite o valor da casa: R$ '))
+salario_comprador = float(input('Digite o salário do comprador: R$ '))
+anos_pagamento = int(input('Digite em quantos anos pretende pagar: '))
 
-# Total value the buyer can afford
-total_affordable = monthly_payment * months_to_pay
+# Cálculo de dados importantes
+limite_prestacao = salario_comprador * 0.3  # 30% do salário, ou seja, o calculo aqui é o mesmo que x 30 /100, a intenção é encontrar o valor limite que o pagador poderá fazer por mês
+total_meses = anos_pagamento * 12  # Total de meses
+prestacao_mensal = valor_casa / total_meses  # Valor da prestação mensal real
 
-if total_affordable >= house_value:
-    print(f'Loan approved! Congratulations! The monthly payment will be R$ {buyer_wage:.2f}')
-elif total_affordable < house_value:
-    print('Loan denied. Reason: The monthly payments exceeds 30% of the salary.')
+# Decisão do empréstimo
+if prestacao_mensal <= limite_prestacao:
+    print(f'Empréstimo APROVADO! A prestação mensal será de R$ {prestacao_mensal:.2f}')
 else:
-    print('Internal server error, please contact the administrator')
-
+    print(f'Empréstimo NEGADO! A prestação mensal de R$ {prestacao_mensal:.2f} excede 30% do salário.')

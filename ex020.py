@@ -15,3 +15,5 @@ random.shuffle(nomes_divididos)
 #Exibir dados na tela
 print(f"A ordem de apresentação é: {nomes_divididos}")
 
+#Exibir dados na tela com cores
+print(f"\033[0:36:47m A ordem de apresentação é: {nomes_divididos}\033[m")

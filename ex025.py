@@ -9,3 +9,6 @@ possui_silva = 'SILVA' in nome_usuario_upper
 
 # Exibir o resultado na tela
 print(f'O nome possui a palavra "SILVA"? {possui_silva}')
+
+# Exibir o resultado na tela com cores
+print(f'\033[7:31m O nome possui a palavra "SILVA"? {possui_silva} \033[m')

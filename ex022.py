@@ -16,3 +16,9 @@ print(f'''Nome com todas as letras maiúsculas: {nome_maiusculo}
 Nome com todas as letras minúsculas: {nome_minusculo}
 Sem considerar os espaços, o nome possui {caracteres_sem_espacos} caracteres
 O primeiro nome possui {posicao_primeiro_espaco} letras''')
+
+# Exibir dados na tela com cores
+print(f'''\033[0:34:40m Nome com todas as letras maiúsculas: {nome_maiusculo}
+Nome com todas as letras minúsculas: {nome_minusculo}
+Sem considerar os espaços, o nome possui {caracteres_sem_espacos} caracteres
+O primeiro nome possui {posicao_primeiro_espaco} letras\033[m''')

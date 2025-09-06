@@ -20,3 +20,5 @@ while True:
 
 #Chamada de função
 salario_novo = aumento_salarial(salario_inicial)
+
+#

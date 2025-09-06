@@ -15,3 +15,9 @@ print(f'''Unidade: {unidade}
 Dezena: {dezena}
 Centena: {centena}
 Milhar: {milhar}''')
+
+# Exibir os dígitos separados na tela por cores
+print(f'''\033[0:30mUnidade: {unidade}
+\033[31mDezena:{dezena}
+\033[32mCentena:{centena}
+\033[33mMilhar:{milhar}''')

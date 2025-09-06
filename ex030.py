@@ -12,6 +12,6 @@ while True:
 # Identificação do número
 resto_divisao_por_2 = numero_user % 2
 if resto_divisao_por_2 == 0:
-    print("O número é par")
+    print("\033[32mO número é par\033[m")
 else:
-    print("O número é ímpar")
+    print("\033[31mO número é ímpar\033[m")

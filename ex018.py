@@ -10,4 +10,4 @@ cosseno = math.cos(math.radians(angulo))
 tangente = math.tan(math.radians(angulo))
 
 #Exibir dados na tela
-print(f"Sobre o ângulo informado de {angulo}. Segue abaixo os valores:\n seno: {seno:.2f}\n cosseno: {cosseno:.2f}\n tangente: {tangente:.2f}")
+print(f"\033[0:31:40m Sobre o ângulo informado de {angulo}. Segue abaixo os valores:\n seno: {seno:.2f}\n cosseno: {cosseno:.2f}\n tangente: {tangente:.2f}\033[m")
